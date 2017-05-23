@@ -4,6 +4,7 @@ class Product < ApplicationRecord
   has_many :favorites
   has_many :users, through: :favorites, source: :user
 
+
   def publish!
     self.is_hidden = false
     self.save
@@ -13,4 +14,5 @@ class Product < ApplicationRecord
     self.is_hidden = true
     self.save
   end
+
 end
