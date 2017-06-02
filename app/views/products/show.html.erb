@@ -72,9 +72,9 @@
             <p style="padding:15px;">
                 <small>
 									<% if @product.image.present? %>
-							      <%= image_tag(@product.image.medium.url, class:"img-responsive wow bounce", data: {wow_delay:"1.5s"} )%> <!-- 加入show下图片效果 效果网站 https://daneden.github.io/animate.css/ -->
+							        <%= image_tag(@product.image.medium.url, class:"img-responsive wow bounce", data: {wow_delay:"1.5s"} )%> <!-- 加入show下图片效果 效果网站 https://daneden.github.io/animate.css/ -->
 						      <% else %>
-							      <%= image_tag("http://placehold.it/400x400&text=No Pic", class:"img-responsive")%>
+							        <%= image_tag("http://placehold.it/400x400&text=No Pic", class:"img-responsive")%>
 						      <% end %>
                 </small>
             </p>

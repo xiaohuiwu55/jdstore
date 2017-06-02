@@ -8,7 +8,9 @@
 u = User.new
 u.email = "admin@test.com"
 
-u.username = "Eric"
+
+u.username = "xiaowu"
+
 
 u.password = "123123"
 
