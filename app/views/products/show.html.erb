@@ -44,7 +44,7 @@
             <button class="btn-danger">已销售一空，无法购买</button>
           <% end %>
             <h6>
-              <% if current_user.is_favorites?(@product) %>
+              <% if current_user && current_user.is_favorites?(@product) %>
                 <label class="label label-warning"> 已加入心愿单 </label>
               <% else %>
                 <%= link_to( add_to_wish_list_product_path(@product), method: :post, class: "btn btn-lg btn-warning ") do %><span class="glyphicon glyphicon-heart-empty" style="cursor:pointer;"></span> 加入心愿单 <% end %>
@@ -72,9 +72,9 @@
             <p style="padding:15px;">
                 <small>
 									<% if @product.image.present? %>
-						        <%= image_tag(@product.image.medium.url, class:"img-responsive wow bounce", data: {wow_delay:"1.5s"} )%> <!-- 加入show下图片效果 效果网站 https://daneden.github.io/animate.css/ -->
+							      <%= image_tag(@product.image.medium.url, class:"img-responsive wow bounce", data: {wow_delay:"1.5s"} )%> <!-- 加入show下图片效果 效果网站 https://daneden.github.io/animate.css/ -->
 						      <% else %>
-						        <%= image_tag("http://placehold.it/400x400&text=No Pic", class:"img-responsive")%>
+							      <%= image_tag("http://placehold.it/400x400&text=No Pic", class:"img-responsive")%>
 						      <% end %>
                 </small>
             </p>
@@ -111,7 +111,6 @@
       event.strftime('%D days %H:%M:%S')
     );
   });
-
   /*----------------------
 Product show
 ----------------------*/
@@ -121,14 +120,11 @@ $(document).ready(function(){
                $("ul.menu-items > li").removeClass("active");
                $(this).addClass("active");
            })
-
            $(".attr,.attr2").on("click",function(){
                var clase = $(this).attr("class");
-
                $("." + clase).removeClass("active");
                $(this).addClass("active");
            })
-
            //-- Click on QUANTITY
            $(".btn-minus").on("click",function(){
                var now = $(".section > div > input").val();
