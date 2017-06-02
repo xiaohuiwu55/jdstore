@@ -18,3 +18,9 @@ u.password_confirmation = "123123"
 
 u.is_admin = true
 u.save
+Product.create!(title: "smartsion m1",
+                 description: "好用，强大",
+                 price: 2800,
+                 quantity: 10,
+                 image: open("https://ws3.sinaimg.cn/large/006tNc79gy1fg7a5w7y3uj30eh0ctt9s.jpg")
+                 )
