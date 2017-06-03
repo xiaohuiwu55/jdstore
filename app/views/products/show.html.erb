@@ -111,7 +111,6 @@
       event.strftime('%D days %H:%M:%S')
     );
   });
-
   /*----------------------
 Product show
 ----------------------*/
@@ -121,14 +120,11 @@ $(document).ready(function(){
                $("ul.menu-items > li").removeClass("active");
                $(this).addClass("active");
            })
-
            $(".attr,.attr2").on("click",function(){
                var clase = $(this).attr("class");
-
                $("." + clase).removeClass("active");
                $(this).addClass("active");
            })
-
            //-- Click on QUANTITY
            $(".btn-minus").on("click",function(){
                var now = $(".section > div > input").val();
