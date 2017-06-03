@@ -205,7 +205,8 @@ body {
 .thumbnail{
 		-webkit-transition: all 0.5s;
 		transition: all 0.5s;
-}
+    border: 1.5px solid #E0E0E0;
+  }
 .thumbnail:hover{
 		opacity:1.00;
 		box-shadow: 0px 0px 10px #BDBDBD;
@@ -363,3 +364,12 @@ div.section > div > input {margin:0px;padding-left:5px;font-size:10px;padding-ri
 // .login-help{
 //   font-size: 12px;
 // }
+.user{
+  background-image: url("devise.jpeg");
+  margin: -70px -20px -20px -20px;
+  width: 110%;
+  height: 110%;
+  .panel{
+    margin-top: 100px;
+    margin-bottom: 40px;}
+}
