@@ -12,11 +12,6 @@ GIT
 GEM
   remote: https://rubygems.org/
   specs:
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> c65a8fe980702ab3651abd1aa4d3977c6af03d04
     aasm (4.12.0)
       concurrent-ruby (~> 1.0)
     actioncable (5.0.3)
@@ -268,20 +263,11 @@ GEM
     will_paginate (3.1.5)
     will_paginate-bootstrap (1.0.1)
       will_paginate (>= 3.0.3)
-<<<<<<< HEAD
->>>>>>> 9c665aaf37c6e2edfaa1c518db148197daf9016e
-=======
->>>>>>> c65a8fe980702ab3651abd1aa4d3977c6af03d04
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> c65a8fe980702ab3651abd1aa4d3977c6af03d04
   aasm
   acts_as_list
   awesome_rails_console
@@ -315,10 +301,6 @@ DEPENDENCIES
   web-console
   will_paginate
   will_paginate-bootstrap
-<<<<<<< HEAD
->>>>>>> 9c665aaf37c6e2edfaa1c518db148197daf9016e
-=======
->>>>>>> c65a8fe980702ab3651abd1aa4d3977c6af03d04
 
 BUNDLED WITH
    1.15.0
