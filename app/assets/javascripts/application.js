@@ -16,6 +16,7 @@
 //= require bootstrap/collapse
 //= require bootstrap/dropdown
 //= require autosize.min
+//= require bootstrap.js
 //= require jquery.countdown.min
 //= require wow.min
 //= require_tree .
