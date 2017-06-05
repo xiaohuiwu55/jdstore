@@ -1,6 +1,9 @@
 <div class="row">
-  <div class="col-md-10 col-md-offset-1">
+  <div class="col-md-8 col-md-offset-1">
+    <h2 class="text-center">心愿单</h2>
+    <br><br>
     <% current_user.products.each do |product| %>
+    <hr>
     <div class="row">
       <div class="col-md-4">
         <% if product.image.present? %>
@@ -16,7 +19,7 @@
             <%= product.description %>
           </p>
         </div>
-        <div class="product-price"> ￥ <%= product.price %> </div>
+        <div class="product-price"><h3> ￥ <%= product.price %> </h3></div>
       </div>
       <div class="col-md-2">
         <% if product.quantity.present? && product.quantity > 0 %>
@@ -28,7 +31,19 @@
         <%= link_to( delete_from_wish_list_product_path(product), method: :post, class: "btn  btn-danger") do %><i class="fa fa-trash-o" aria-hidden="true"></i> 移除<% end %>
       </div>
     </div>
-    <hr>
     <% end %>
+    <br><br>
+  </div>
+  <div class="col-md-3">
+    <div class="panel panel-default">
+      <div class="panel-heading">您订单中的商品即可享受免费配送。
+      </div>
+      <div class="panel-body">
+        <%= link_to  carts_path do%>
+        <button class="btn btn-warning"><i class='fa fa-shopping-cart'></i>  进入结算中心</button>
+        <% end %>
+      </div>
+      <div class="panel-footer">您的购物车总计商品：<%= current_cart.products.count %> 件</div>
+    </div>
   </div>
 </div>
