@@ -451,6 +451,7 @@ body {
   /*===== 轮播内容 =====*/
   margin-top: -50px;
 
+
   .item {
     /* 标题 */
     h3 {
@@ -467,6 +468,7 @@ body {
     /* 图片 */
     img {
       width: 100%;
+        background-size: cover;
     }
   }
 
