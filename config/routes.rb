@@ -23,7 +23,7 @@ Rails.application.routes.draw do
   end
 
 
-  root 'products#index'
+  root 'welcome#index'
   resources :products do
     member do
       post :add_to_cart
