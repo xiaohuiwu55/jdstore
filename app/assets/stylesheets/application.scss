@@ -695,12 +695,14 @@ body {
   }
 
   /* 图片-鼠标滑动效果 */
-  a:hover {
-    color: #0070DE !important;
-    img {
-      opacity: 0.75;
+    a:hover {
+      color: #0070DE !important;
+      img {
+        opacity: 0.75;
+      }
     }
   }
+
 
   /* 按钮 */
   .btn {
@@ -782,5 +784,4 @@ body {
     margin-right: 10px; //图片和链接文字拉开一点距离
     width: 32px; //定制图片宽度
     height: 32px; //定制图片高度
-}
 }
