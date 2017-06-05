@@ -12,11 +12,8 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require bootstrap/alert
-//= require bootstrap/collapse
-//= require bootstrap/dropdown
+//= require bootstrap
 //= require autosize.min
-//= require bootstrap-sprockets
 //= require jquery.countdown.min
 //= require wow.min
 //= require_tree .
