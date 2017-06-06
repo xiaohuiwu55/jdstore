@@ -45,6 +45,9 @@
   					<h3 class="text-center">
   					<p>￥ <%= product.price %>.00</p></h3>
   				</div>
+          <div >
+            <p class="text-center" style="color: #c5bbbb;">浏览量:<%= product.impressionist_count(:filter=>:session_hash) %></p>
+          </div>
   			</div>
 
         <hr>

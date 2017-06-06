@@ -1,4 +1,5 @@
 class ProductsController < ApplicationController
+  impressionist :actions=>[:show]
   before_action :authenticate_user!, only: [:add_to_wish_list, :delete_from_wish_list]
   def index
     @q = Product.ransack(params[:q])
