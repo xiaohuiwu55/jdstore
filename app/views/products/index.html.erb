@@ -19,6 +19,15 @@
           <%= link_to(add_to_wish_list_product_path(product), method: :post, class:"nolove") do %><i class="fa fa-heart-o " aria-hidden="true"></i><% end %>
         <% end %>
       </div>
+       <div class="pull-left">
+      <%= link_to like_product_path(product), method: :put do %>
+        <div class="pi-thumbs-up">
+        <i class="fa fa-thumbs-o-up" aria-hidden="true", style="color:#ff5722;"></i>
+        <%= product.get_upvotes.size %>
+        </div>
+        <% end %>
+      </div>
+
       <%= link_to(product_path(product)) do %>
         <% if product.image.present? %>
           <%= image_tag(product.image.thumb.url) %>
