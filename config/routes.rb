@@ -29,6 +29,7 @@ Rails.application.routes.draw do
       post :add_to_cart
       post :add_to_wish_list
       post :delete_from_wish_list
+      put "like", to: "products#upvote"
     end
   end
 

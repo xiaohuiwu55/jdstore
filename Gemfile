@@ -57,6 +57,7 @@ gem 'omniauth-github'
 gem 'figaro'
 gem 'carrierwave-qiniu'
 gem 'qiniu-rs'
+gem 'acts_as_votable', '~> 0.10.0'
 
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
