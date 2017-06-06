@@ -1,1 +1,220 @@
-<h1>hello world !!!!</h1>
+<div class="welcome-box">
+  <!--===== 广告轮播 =====-->
+  <section class="intro-box">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="row">
+        <div id="intro" class="carousel slide" data-ride="carousel">
+          <!--===== 轮播按钮 =====-->
+          <ol class="carousel-indicators">
+            <li data-target="#intro" data-slide-to="0" class="active"></li>
+            <li data-target="#intro" data-slide-to="1"></li>
+            <li data-target="#intro" data-slide-to="2"></li>
+          </ol>
+
+          <!--===== 轮播内容 =====-->
+          <div class="carousel-inner" role="listbox">
+            <div class="item active">
+              <%= link_to 'https://chengai.herokuapp.com/products', target: "_blank" do %> <!-- 图片连结，点击另开视窗 -->
+                <%= image_tag("intro_1.jpg") %> <!-- 图片位置 -->
+                <div class="carousel-caption">
+                  <h3>数码魅力</h3> <!-- 标题 -->
+                  <p>感受科技时代的效率，让生活更有趣</p> <!-- 内文 -->
+                </div>
+              <% end %>
+            </div>
+            <div class="item">
+              <%= link_to 'https://chengai.herokuapp.com/products', target: "_blank" do %>
+                <%= image_tag("intro_2.jpg") %>
+                <div class="carousel-caption">
+                  <h3>编程世界</h3>
+                  <p>语言的力量，超乎想象</p>
+                </div>
+              <% end %>
+            </div>
+            <div class="item">
+              <%= link_to 'https://chengai.herokuapp.com/products', target: "_blank" do %>
+                <%= image_tag("intro_3.jpg") %>
+                <div class="carousel-caption">
+                  <h3>各种周边</h3>
+                  <p>精心设计的工具，让生活更有趣</p>
+                </div>
+              <% end %>
+            </div>
+          </div>
+
+          <!--===== 换页按钮 =====-->
+          <a class="left carousel-control" href="#intro" role="button" data-slide="prev">
+            <span class="fa fa-angle-left" aria-hidden="true"></span> <!-- 左侧按钮图示 -->
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#intro" role="button" data-slide="next">
+            <span class="fa fa-angle-right" aria-hidden="true"></span> <!-- 右侧按钮图示 -->
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+      </div>
+    </div>
+  </section>
+
+  <!--===== 品牌故事 =====-->
+  <section class="story-box">
+    <div class="row">
+      <div class="col-md-10 col-md-offset-1">
+        <h2>品牌故事</h2> <!-- 区块标题 -->
+        <h1>程爱</h1> <!-- 品牌名称 -->
+        <div class="short-line"></div> <!-- 分隔线 -->
+        <div class="row">
+          <div class="col-md-3 col-md-offset-1">
+            <%= image_tag("founder_1.png") %> <!-- 创办人头像 1 -->
+          </div>
+          <div class="col-md-7">
+            <h3>xiaowu</h3> <!-- 创办人姓名 -->
+            <p>我们希望能为大家带来种类多样，价格低廉并且设计独特，且大多数人都可以负担都起都各种数码产品，为了实现这些想法，我们从产品设计，工艺要求，生产制造到店铺经营，方方面面都在不断都追究极致和突破。 </p> <!-- 创办人介绍 -->
+          </div>
+        </div>
+        <hr />
+        <div class="row">
+          <div class="col-md-7 col-md-offset-1">
+            <h3>wuyu</h3> <!-- 创办人姓名 -->
+            <p>我们作为程序员出身，深知设备对我们来说都重要性，每一样物品都关乎自己每天都心情，效率的提高是每一个程序员所终身追求的，我们想要去提供给喜爱编程的你一个放心舒适满意的科技用品，让工作方式更上一层楼。</p> <!-- 创办人介绍 -->
+          </div>
+          <div class="col-md-3">
+            <%= image_tag("founder_2.png") %> <!-- 创办人头像 2 -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--===== 服务优势 =====-->
+  <section class="service-box">
+    <div class="row">
+      <div class="col-md-10 col-md-offset-1">
+        <h2>服务优势</h2> <!-- 副标题 -->
+        <div class="short-line"></div> <!-- 分隔线 -->
+        <div class="row">
+          <div class="col-md-4 col-sm-4 col-xs-12">
+            <div class="box">
+              <%= image_tag("service_1.png") %> <!-- 图示 -->
+              <h3>品质保证</h3> <!-- 标题 -->
+              <p>本店的商品皆通过市场验证，使用最高级的材料制作而成，品质为业界领先标准。</p> <!-- 内文 -->
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-4 col-xs-12">
+            <div class="box">
+              <%= image_tag("service_2.png") %>
+              <h3>快速送达</h3>
+              <p>全国皆享有当天下单、隔日送达的服务，过程中有任何损坏皆由我们负责，请放心购买。</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-4 col-xs-12">
+            <div class="box">
+              <%= image_tag("service_3.png") %>
+              <h3>安心使用</h3>
+              <p>设计皆考量人体工学及真实使用情境，使用起来更安心。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--===== 商品分类 =====-->
+  <section class="categories-box">
+    <div class="row">
+      <div class="col-md-4 category-content">
+        <%= link_to 'https://chengai.herokuapp.com/products/5' , class: "category_1" do %> <!-- 分类连结 -->
+          <div class="category-box">
+            <%= image_tag("category_1.jpg") %> <!-- 分类图片 -->
+          </div>
+          <div>
+            <h3>键盘</h3> <!-- 分类标题 -->
+            <p>敲起代码顺畅自如，行云流水，不管是茶轴还是黑轴，品质都是业界最优选择，键盘机械测试上亿次，放心使用，稳稳的。</p> <!-- 分类介绍 -->
+          </div>
+        <% end %>
+      </div>
+      <div class="col-md-4 category-content">
+        <%= link_to 'https://chengai.herokuapp.com/products/6' , class: "category_2" do %>
+          <div class="category-box">
+            <%= image_tag("category_2.jpg") %>
+          </div>
+          <div>
+            <h3>鼠标</h3>
+            <p>贴合手掌的人体工程学设计，最人性化的设计，让人感觉像自己的手指一样灵活，指哪打哪，流畅的无法想象，点按无忧，怎么点都不费劲。</p>
+          </div>
+        <% end %>
+      </div>
+      <div class="col-md-4 category-content">
+        <%= link_to 'https://chengai.herokuapp.com/products/7' , class: "category_3" do %>
+          <div class="category-box">
+            <%= image_tag("category_3.jpg") %>
+          </div>
+          <div>
+            <h3>椅子</h3>
+            <p>不用在担心腰疼了，我们的椅子你就尽管坐，舒适的不像话，就像躺着一样，从小到大没见过还有这样的椅子，升降随心，承重过万，杠杠滴。</p>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </section>
+
+  <!--===== 推荐商品 =====-->
+
+
+  <!--===== 用户反馈 =====-->
+  <section class="feedback-box">
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+        <h2>用户反馈</h2> <!-- 副标题 -->
+        <div class="short-line"></div> <!-- 分隔线 -->
+        <div id="feedback" class="carousel slide" data-ride="carousel">
+          <!--===== 轮播按钮 =====-->
+          <ol class="carousel-indicators">
+            <li data-target="#feedback" data-slide-to="0" class="active"></li>
+            <li data-target="#feedback" data-slide-to="1"></li>
+            <li data-target="#feedback" data-slide-to="2"></li>
+          </ol>
+
+          <!--===== 轮播内容 =====-->
+          <div class="carousel-inner" role="listbox">
+            <div class="item active">
+              <p>这是我用过最好的网站，商品众多、下单方便、送货快速，还能订制特殊规格的椅子，强力推荐。</p>
+              <%= image_tag("feedback_1.png") %> <!-- 图片 -->
+              <strong>Eddie - 上班族</strong> <!-- 介绍 -->
+            </div>
+            <div class="item">
+              <p>我是这网站的忠实用户，已经在这买好几年了，质量一直很好，而且不定时会有折扣，真的很划算！</p>
+              <%= image_tag("feedback_2.png") %>
+              <strong>Anna - 家庭主妇</strong>
+            </div>
+            <div class="item">
+              <p>身为一个学生，预算不太多，却也能在这找到便宜又有设计感的鼠标，让我生活又添加一份乐趣。</p>
+              <%= image_tag("feedback_3.png") %>
+              <strong>Kobe - 大学生</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--===== 合作品牌 =====-->
+  <section class="brand-box">
+    <div class="row">
+      <div class="col-md-10 col-md-offset-1">
+        <h2>合作品牌</h2> <!-- 副标题 -->
+        <div class="short-line"></div> <!-- 分隔线 -->
+        <%= image_tag("brand_1.png") %> <!-- 品牌图片 -->
+        <%= image_tag("brand_2.png") %>
+        <%= image_tag("brand_3.png") %>
+      </div>
+    </div>
+  </section>
+
+  <!--===== 立即购买 =====-->
+  <section class="push-box">
+    <%= link_to('立即购买', products_path, class:'btn btn-danger' ) %>
+  </section>
+</div>
