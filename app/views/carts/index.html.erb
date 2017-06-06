@@ -100,18 +100,18 @@
     </table>
     <br>
   </div>
-  <div class="col-md-3 col-xs-4">
-      <div class="panel panel-default">
-        <div class="panel-heading">您订单中的商品即可享受免费配送。
-        </div>
-        <div class="panel-body">
-          <h4>小计（<%= current_cart.products.count %>件商品）：<%= render_cart_total_price(current_cart) %> RMB</h4>
-         <!-- <%= link_to  carts_path do %>
-          <button class="btn btn-warning"><i class='fa fa-shopping-cart'></i>  进入结算中心</button>
-          <% end %> -->
-        </div>
-        <div class="panel-footer">为了您的包裹安全抵达您的身边，我们只用 <img src='<%= image_url 'shunfeng.png' %>' >顺丰快递！</div>
+  <div class="cart-affix" data-spy="affix" data-offset-top="30" data-offset-bottom="450">
+    <div class="panel panel-default">
+      <div class="panel-heading">您订单中的商品即可享受免费配送。
       </div>
+      <div class="panel-body">
+        <h4>小计（<%= current_cart.products.count %>件商品）：<%= render_cart_total_price(current_cart) %> RMB</h4>
+       <!-- <%= link_to  carts_path do %>
+        <button class="btn btn-warning"><i class='fa fa-shopping-cart'></i>  进入结算中心</button>
+        <% end %> -->
+      </div>
+      <div class="panel-footer">为了您的包裹安全抵达您的身边，我们只用 <img src='<%= image_url 'shunfeng.png' %>' >顺丰快递！</div>
+    </div>
    </div>
   </div>
 </div>

@@ -23,8 +23,8 @@
 
  /*----------go top-----*/
  #gotop {
-   width: 30px;
-   height: 30px;
+   width: 26px;
+   height: 28px;
    position: fixed;
    right: 20px;
    bottom: 70px;
@@ -805,3 +805,8 @@ body {
     height: 32px; //定制图片高度
 }
 
+.cart-affix {
+  width: 300px;
+  position: fixed;
+  right: 20px;
+}
