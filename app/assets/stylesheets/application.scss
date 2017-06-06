@@ -379,8 +379,8 @@ Product show
 /*===== 网站通用设置 ======*/
 body {
   overflow-x: hidden; //裁切页面内容，超出视窗不显示
-  letter-spacing: 1px; //文字间距
-  font-size: 14px; //文字大小
+  // letter-spacing: 1px; //文字间距
+  // font-size: 14px; //文字大小
   position: relative; //设定为相对位置
 
   padding-top: 100px;
@@ -701,8 +701,6 @@ body {
         opacity: 0.75;
       }
     }
-  }
-
 
   /* 按钮 */
   .btn {
@@ -715,6 +713,7 @@ body {
   .btn:focus {
     color: #0070DE;
   }
+}
 
   /* 广告图 */
   .intro-box {
