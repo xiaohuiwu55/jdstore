@@ -16,6 +16,26 @@
  @import "bootstrap-sprockets";
  @import "bootstrap";
  @import "font-awesome";
+
+
+
+
+
+ /*----------go top-----*/
+ #gotop {
+   width: 30px;
+   height: 30px;
+   position: fixed;
+   right: 20px;
+   bottom: 70px;
+   border: 0;
+   color: rgb(170, 170, 170);
+   background-color: rgb(221, 221, 221);
+   text-shadow: 0 1px 0 #999;
+   cursor: pointer;
+   display: block;
+ }
+
 //---------navbar-------//
 .navbar-inverse {
   margin-bottom: 0;
@@ -784,3 +804,4 @@ body {
     width: 32px; //定制图片宽度
     height: 32px; //定制图片高度
 }
+
