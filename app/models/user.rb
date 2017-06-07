@@ -7,6 +7,7 @@ class User < ApplicationRecord
          :omniauthable
   has_many :orders
   has_many :identifies
+  has_many :reviews
   def admin?
     is_admin
   end

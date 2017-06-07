@@ -79,28 +79,35 @@
                 </small>
             </p>
             <small>
-            <ul>
-                <li>Super AMOLED capacitive touchscreen display with 16M colors</li>
-                <li>Available on GSM, AT&T, T-Mobile and other carriers</li>
-                <li>Compatible with GSM 850 / 900 / 1800; HSDPA 850 / 1900 / 2100 LTE; 700 MHz Class 17 / 1700 / 2100 networks</li>
-                <li>MicroUSB and USB connectivity</li>
-                <li>Interfaces with Wi-Fi 802.11 a/b/g/n/ac, dual band and Bluetooth</li>
-                <li>Wi-Fi hotspot to keep other devices online when a connection is not available</li>
-                <li>SMS, MMS, email, Push Mail, IM and RSS messaging</li>
-                <li>Front-facing camera features autofocus, an LED flash, dual video call capability and a sharp 4128 x 3096 pixel picture</li>
-                <li>Features 16 GB memory and 2 GB RAM</li>
-                <li>Upgradeable Jelly Bean v4.2.2 to Jelly Bean v4.3 Android OS</li>
-                <li>17 hours of talk time, 350 hours standby time on one charge</li>
-                <li>Available in white or black</li>
-                <li>Model I337</li>
-                <li>Package includes phone, charger, battery and user manual</li>
-                <li>Phone is 5.38 inches high x 2.75 inches wide x 0.13 inches deep and weighs a mere 4.59 oz </li>
-            </ul>
             </small>
         </div>
     </div>
-    	</div>
-    </div>
+		<div class="row review">
+      <div class="col-sm-10 col-sm-offset-1">
+				<div class="panel panel-default">
+					<div class="panel-body">
+				     <h3 class="reviews_title">
+					    累计评价（<%= @product.reviews.count %>）
+				     </h3>
+				     <hr>
+				  <div id="reivews">
+							<ul class="list-group">
+							<% @product.reviews.each do |review| %>
+							<li class="list-group-item">
+							<%= review.body %>
+							<%= current_user.name %>
+							<%= review.created_at.to_s(:long)  %></li>
+							<% end %>
+							</ul>
+					   <hr>
+					    <%= render "reviews/form" %>
+				  </div>
+         </div>
+       </div>
+   </div>
+  </div>
+  </div>
+</div>
 
 
 

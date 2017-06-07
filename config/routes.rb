@@ -25,6 +25,7 @@ Rails.application.routes.draw do
 
   root 'welcome#index'
   resources :products do
+  resources :reviews
     member do
       post :add_to_cart
       post :add_to_wish_list
