@@ -20,6 +20,7 @@
 
   <div class="group">
     <%= f.input :image, as: :file %>
+    <%= f.file_field :image, :multiple => true, name: "photos[image][]" %>（"请上传4张图片"）
   </div>
 
   <div class="group">
@@ -32,4 +33,4 @@
 
   <script type="text/javascript">
     autosize($('#product_description'));
-  </script>    <!--将输入框依照行数改变高度--> 
+  </script>    <!--将输入框依照行数改变高度-->
