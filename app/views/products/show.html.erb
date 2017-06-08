@@ -1,11 +1,33 @@
 <div class="container product-show">
 	<div class="row">
-   <div class="col-xs-4 item-photo">
-     <% if @product.image.present? %>
-       <%= image_tag(@product.image.medium.url, class:"img-responsive wow bounce", data: {wow_delay:"1.5s"} )%> <!-- 加入show下图片效果 效果网站 https://daneden.github.io/animate.css/ -->
-     <% else %>
-       <%= image_tag("http://placehold.it/400x400&text=No Pic", class:"img-responsive")%>
-     <% end %>
+		<!-- 主图 -->
+    <div class="col-xs-4 item-photo">
+        <div class="productDetail">
+          <div class="productDetail-left">
+            <div class="productDetail-left-bigImage">
+							<% if @product.image.present? %>
+				        <%= image_tag(@product.image.medium.url, class:"img-responsive wow bounce", data: {wow_delay:"1.5s"} )%> <!-- 加入show下图片效果 效果网站 https://daneden.github.io/animate.css/ -->
+				      <% else %>
+				        <%= image_tag("http://placehold.it/400x400&text=No Pic", class:"img-responsive")%>
+				      <% end %>
+            </div>
+            <!-- 下方小图-->
+            <div class="productDetail-left-imageList ">
+              <div class="productDetail-left-imageList-item">
+                <%= image_tag @product.photos[0].image.medium.url  %>
+              </div>
+              <div class="productDetail-left-imageList-item">
+                <%= image_tag @product.photos[1].image.medium.url  %>
+              </div>
+              <div class="productDetail-left-imageList-item">
+                <%= image_tag @product.photos[2].image.medium.url  %>
+              </div>
+              <div class="productDetail-left-imageList-item">
+                <%= image_tag @product.photos[3].image.medium.url  %>
+              </div>
+            </div>
+          </div>
+        </div>
     </div>
     <div class="col-xs-5" style="border:0px solid gray">
         <h3><%= @product.title %></h3>

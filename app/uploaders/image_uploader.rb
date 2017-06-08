@@ -64,4 +64,4 @@ class ImageUploader < CarrierWave::Uploader::Base
   #   "something.jpg" if original_filename
   # end
 self.qiniu_can_overwrite = true
-end 
+end
